@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sy8-1</title>
+<style>
+	body,table,th,tr,p{margin:0;padding:0;}
+	.hezi{
+		width:500px;
+		margin-left:50%;
+		left:-250px;
+		position:absolute;
+	}
+	.form1 a{
+		font-size: 20px;
+		color: white;
+		width:120px;
+		margin-left:50%;
+		left:-60px;
+		position:absolute;
+		
+	}
+	.form1{
+		background-color: gray;
+		width:500px;
+		height:190px;
+		
+		color: white;
+		margin-bottom: -19px;
+	}
+	table{
+		width:400px;
+		border: 1px ;
+	}
+	
+	.form1 [type="text"]{
+		width:105px;
+	}
+	.table1{
+		border:solid 1px #FFFFFF ;
+		width:400px;
+		padding: 30px 20px;
+	}
+	.form1 legend{
+		text-align: left;
+	}
+	.form1 fieldset{
+		border:white solid 1px;
+		width:420px;
+		padding: 20px 0 10px 20px;
+	}
+	.form1 tr{
+		height: 10px;
+	}
+
+	.form2{
+		margin-top: -19px;
+		padding-top: 15px;
+		background-color: gray;
+		width:500px;
+		height:320px;
+		
+		color: white;
+	}
+	.form2 select{
+		width:130px;
+	}
+	.shd{
+		margin:10px 0 0 0px;
+		text-align: left;
+		height:21px;
+		width:400px;
+	}
+	.form2 legend{
+		text-align: left;
+	}
+	.form2 fieldset{
+		border:white solid 1px;
+		width:420px;
+		padding: 20px 0 10px 20px;
+	}
+	.form2 tr{
+		height: 10px;
+	}
+	.form2 table{
+		width:400px;
+		border: 1px ;
+	}
+	.form2 [type="text"]{
+		width:105px;
+	}
+	
+	.baozhuang{
+		text-align: left;
+		margin-top:20px;
+		
+	}
+	.baozhaung p{
+		margin-left:10px;
+	}
+	.fukuan{
+		text-align: left;
+		margin-top:20px;
+	
+	}
+	.form3 a{
+		font-size: 20px;
+		color: white;
+	}
+	.form3{
+		background-color: gray;
+		width:500px;
+		height:190px;
+	
+		color: white;
+		margin-bottom: -19px;
+	}
+	
+	.form3 [type="text"]{
+		width:105px;
+	}
+	.form3 legend{
+		text-align: left;
+	}
+	.form3 fieldset{
+		border:white solid 1px;
+		width:420px;
+		padding: 20px 0 10px 20px;
+	}
+	.k1{
+		text-align: left;
+	}
+	.k1 [type="text"]{
+		width:300px;
+	}
+	.k2{
+		text-align: left;
+		display: inline-block;
+		width:205px;
+	}
+	.k2 [type="text"]{
+		width:40px;
+	}
+	.k3{
+		text-align: left;
+		display: inline-block;
+		width:210px;
+	}
+	.k3 [type="text"]{
+		width:80px;
+	}
+</style>
+</head>
+
+<body>
+<div class="hezi">
+
+<div class="form1">
+	<a><b>增加快递信息</b></a><br>
+
+	<fieldset style="margin:25px auto">
+	<legend>发货单</legend>
+		<table style="padding:25px auto">
+		<tr>
+			<td>发货人:</td>
+			<td><input type ="text"></td>
+			<td>地址:</td>
+			<td><input type ="text"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>电话:</td>
+			<td><input type ="text"></td>
+			<td>邮编:</td>
+			<td><input type ="text"></td>
+		</tr>
+	</table>
+	</fieldset>
+</div>
+
+
+<div class="form2">
+	<fieldset style="margin:25px auto">
+	<legend>收货单</legend>
+		<table style="padding:25px auto">
+		<tr>
+			<td>收货人:</td>
+			<td><input type ="text"></td>
+			<td>地址:</td>
+			<td><input type ="text"></td>
+		</tr>
+		<tr></tr>
+		<tr>
+			<td>电话:</td>
+			<td><input type ="text"></td>
+			<td>邮编:</td>
+			<td><input type ="text"></td>
+		</tr>
+	</table>
+	<div class="shd">
+	<a>地区：</a>
+	<select>
+	<option>北京</option>
+	<option>杭州</option>
+	<option>上海</option>
+	</select>
+	</div>
+	
+	<div class="baozhuang">
+	<a>包装：</a>
+	<input type="checkbox" name="纸箱" value="纸箱" id="纸箱">
+	<label class="baozhuang">纸箱</label>
+	<input type="checkbox" name="木箱" value="木箱" id="木箱">
+	<label class="baozhuang">木箱</label>
+	<input type="checkbox" name="快递袋" value="快递袋" id="快递袋">
+	<label class="baozhuang">快递袋</label>
+	<input type="checkbox" name="其他" value="其他" id="其他">
+	<label class="baozhuang">其他</label>
+	</div>
+	
+	<div class="fukuan">
+	<a>付款方式：</a>
+	<input type="radio" name="fukuan" value="现金" id="现金">
+	<label class="fukuan">现金</label>
+	<input type="radio" name="fukuan" value="支付宝" id="支付宝">
+	<label class="fukuan">支付宝<label>
+	<input type="radio" name="fukuan" value="网银" id="网银">
+	<label class="fukuan">网银<label>
+	<input type="radio" name="fukuan" value="ATM" id="ATM">
+	<label class="fukuan">ATM<label>
+	</div>
+	</fieldset>
+</div>	
+	<div class="form3">
+	<fieldset style="margin:0px auto">
+	<legend>货物信息</legend>
+	<div class="k1">货物名称： <input type ="text"></div>
+	<br>
+	<div class="k2">数量：	<input type ="text">
+	重量：	<input type ="text">
+	</div>
+	<div class="k3">发货时间:	<input type ="text">
+	</div>
+	
+	</fieldset>
+	</div>
+	
+</div>	
+</body>
+</html>
